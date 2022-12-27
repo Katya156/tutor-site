@@ -1,1 +1,2 @@
-# tutor-site
+# coursera-test
+Coursera test repository

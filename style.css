@@ -1,0 +1,300 @@
+img {
+  max-width: 100%;
+}
+.letter {
+  color: #9999cc;
+  font-size: 200%; /* Размер шрифта в процентах */
+  font-family: Lucida Calligraphy;
+}
+p {
+  color: #2c3338;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 2;
+  font-size: 18px;
+}
+#end {
+  font-size: 160%;
+}
+h1 {
+  font-family: Book Antiqua;
+  font-size: 80%;
+}
+h2 {
+  font-family: Book Antiqua;
+  font-size: 120%;
+  color: whitesmoke;
+  background-color: rgba(153, 153, 204, 0.7);
+}
+h3 {
+  font-family: Book Antiqua;
+  font-size: 25px;
+  color: whitesmoke;
+}
+h4 {
+  font-family: Book Antiqua;
+  font-size: 120%;
+  color: whitesmoke;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+  float: right;
+}
+.phone {
+  color: #9999cc;
+  font-size: 20px;
+}
+a.animated-button:link,
+a.animated-button:visited {
+  position: relative;
+  display: block;
+  margin: 30px auto 0;
+  padding: 14px 15px;
+  color: black;
+  font-size: 18px;
+  border-radius: 0;
+  /* font-weight: bold; */
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 0.08em;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+a.animated-button:link:after,
+a.animated-button:visited:after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  width: 150%;
+  z-index: -1;
+  -webkit-transition: all 0.75s ease 0s;
+  -moz-transition: all 0.75s ease 0s;
+  -o-transition: all 0.75s ease 0s;
+  transition: all 0.75s ease 0s;
+}
+a.animated-button:link:hover,
+a.animated-button:visited:hover {
+  color: black;
+  text-shadow: none;
+}
+a.animated-button:link:hover:after,
+a.animated-button:visited:hover:after {
+  height: 450%;
+}
+
+a.animated-button.thar-two {
+  color: black;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border: 2px solid rgba(153, 153, 204, 0.7);
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+a.animated-button.thar-two:hover {
+  color: white !important;
+  background-color: transparent;
+  text-shadow: ntwo;
+}
+
+a.animated-button.thar-two:hover:before {
+  top: 0%;
+  bottom: auto;
+  height: 100%;
+}
+
+a.animated-button.thar-two:before {
+  display: block;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  height: 0px;
+  width: 100%;
+  z-index: -1;
+  content: "";
+  color: #000 !important;
+  background: rgba(153, 153, 204, 0.7);
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+.hover-image-scale {
+  display: inline-block;
+  overflow: hidden; /* Скрываем всё за контуром */
+  /* position: absolute; */
+  padding: auto auto;
+}
+
+.hover-image-scale img {
+  transition: 1s; /* Время эффекта */
+  display: block;
+}
+
+.hover-image-scale img:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+}
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.hover-text-one {
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+}
+
+.hover-text-one figure {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  overflow: hidden;
+  background: #527c82;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hover-text-one figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  opacity: 0.8;
+}
+
+.hover-text-one figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.hover-text-one figure figcaption::before,
+.hover-text-one figure figcaption::after {
+  pointer-events: none;
+}
+
+.hover-text-one figure figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hover-text-one figure h3 {
+  word-spacing: -0.15em;
+  /* font-weight: 300; */
+}
+
+.hover-text-one figure h3 span {
+  font-weight: 100;
+}
+
+.hover-text-one figure h3,
+.hover-text-one figure p {
+  margin: 0;
+}
+
+.hover-text-one figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+/* Эффект при наведении */
+figure.effect-text-three {
+  background: #9999cc;
+}
+
+figure.effect-text-three img {
+  width: -webkit-calc(100% + 20px);
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: scale(1.1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+figure.effect-text-three:hover img {
+  opacity: 0.4;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+figure.effect-text-three figcaption {
+  text-align: left;
+}
+
+figure.effect-text-three h3 {
+  position: relative;
+  overflow: hidden;
+  padding: 0.5em 0;
+}
+
+figure.effect-text-three h3::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: "";
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+figure.effect-text-three:hover h3::after {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+figure.effect-text-three p {
+  padding: 1em 0;
+  opacity: 0;
+  font-size: 10px;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+
+figure.effect-text-three:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
